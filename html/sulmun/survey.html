@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>설문조사 양식</title>
+</head>
+<body>
+    <header>
+        <h1>반려동물의 건강에 대한 의견 설문조사</h1>
+        <p>관련 항목들에 체크 부탁드립니다.</p>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" 
+                name="name"
+                id="name" placeholder="본명을 입력하세요.">
+                <br>
+                <label for="email">이메일</label>
+                <input type="email" 
+                name="email"
+                id="email" placeholder="메일 주소를 입력하세요.">
+            </fieldset>
+            <fieldset>
+                <legend>설문</legend>
+                <p>연령대가 어떻게 되시나요?</p>
+                <input type="radio" id="teen" name="age">
+                <label for="teen">10대</label>
+                <input type="radio" id="twnety" name="age">
+                <label for="twnety">20대</label>
+                <input type="radio" id="thirty" name="age">
+                <label for="thirty">30대</label>
+                <input type="radio" id="fourty" name="age">
+                <label for="fourty">40대</label>
+                <input type="radio" id="fifty" name="age">
+                <label for="fifty">50대</label>
+                <input type="radio" id="sixty" name="age">
+                <label for="sixty">60대</label>
+                <input type="radio" id="other" name="age">
+                <label for="sixty">그외</label>
+
+                <p>반려동물을 키우시나요? 키운다면 몇 마리를 키우시나요.</p>
+                <input type="checkbox" id="no" name="health">
+                <label for="no">없음</label>
+                <input type="checkbox" id="Once a week" name="health">
+                <label for="Once a week">1마리</label>
+                <input type="checkbox" id="2 times a week" name="health">
+                <label for="2 times a week">2마리</label>
+                <input type="checkbox" id="3 times a week" name="health">
+                <label for="3 times a week">3마리</label>
+                <input type="checkbox" id="4 times a week" name="health">
+                <label for="4 times a week">그 이상</label>
+
+                <p>반려동물을 키우시는 이유는 어떤것인가요?</p>
+<fieldset>
+  <legend>반려동물을 키우는 이유는 무엇인가요?</legend>
+
+  <input type="radio" id="lonely" name="reason" value="lonely">
+  <label for="lonely">외로움을 달래기 위해</label>
+
+  <input type="radio" id="exercise" name="reason" value="exercise">
+  <label for="exercise">산책 등으로 운동하기 위해</label>
+
+  <input type="radio" id="stress" name="reason" value="stress">
+  <label for="stress">스트레스 해소를 위해</label>
+
+  <input type="radio" id="companionship" name="reason" value="companionship">
+  <label for="companionship">교감을 나누기 위해</label>
+</fieldset>
+                <p>반려동물의 건강을 위해 어떤 노력을 하고 계신가요?</p>
+                <input type="checkbox" id="vet" name="health">
+                <label for="vet">정기적인 동물병원 방문</label>
+                <input type="checkbox" id="diet" name="health">
+                <label for="diet">균형 잡힌 식단 제공</label>
+                <input type="checkbox" id="exercise" name="health">
+                <label for="exercise">규칙적인 운동</label>
+                <input type="checkbox" id="grooming" name="health">
+                <label for="grooming">정기적인 미용 및 청결 관리</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>기타 의견</legend>
+                <textarea row="3" cols="30" name="comment"></textarea>
+            </fieldset>
+            <br>
+            <input type="submit">
+        </form>
+    </main>
+    <br>
+    <footer>
+        <hr>
+        <p>소중한 의견 감사합니다.</p>
+        <hr>
+    </footer>
+</body>
+</html>
